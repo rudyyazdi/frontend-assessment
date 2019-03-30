@@ -12,6 +12,13 @@ div.nav {
   align-content: center;
 }
 
+div.nav > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
 .nav-search-input {
   visibility: hidden;
 }
@@ -22,7 +29,7 @@ div.nav h1.logo {
   font-weight: 900;
   font-size: 3em;
   letter-spacing: -0.1em;
-  text-align: center;
+  margin: auto;
 }
 
 .menu {
