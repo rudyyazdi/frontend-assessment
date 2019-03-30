@@ -1,0 +1,65 @@
+nav {
+  background-color: red;
+  height: 4em;
+  color: white;
+  text-transform: uppercase;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  align-content: center;
+}
+
+div.container div {
+  /* border: 1px solid black; */
+}
+
+input.search-input {
+  display: none;
+}
+
+div.container h1.logo {
+  color: white;
+  font-family: 'Arial';
+  font-weight: 900;
+  font-size: 3em;
+  letter-spacing: -0.1em;
+  text-align: center;
+}
+
+.menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu span,
+.menu span::before,
+.menu span::after {
+  display: block;
+  background: white;
+  height: 4px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.menu span::before,
+.menu span::after {
+  content: '';
+  position: absolute;
+}
+
+.menu span::before {
+  bottom: 10px;
+}
+
+.menu span::after {
+  top: 10px;
+}
