@@ -12,12 +12,8 @@ div.container {
   align-content: center;
 }
 
-div.container div {
-  /* border: 1px solid black; */
-}
-
-input.nav-search-input {
-  display: none;
+.nav-search-input {
+  visibility: hidden;
 }
 
 div.container h1.logo {
@@ -65,12 +61,12 @@ div.container h1.logo {
 }
 
 @media only screen and (min-width: 800px) {
-  input.nav-search-input {
-    display: block;
+  .nav-search-input {
+    visibility: visible;
   }
 
   .menu {
-    display: none;
+    visibility: hidden;
   }
 
   div.container {

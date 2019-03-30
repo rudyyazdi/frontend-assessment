@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SearchInput from './SearchInput'
 import './nav.css'
 
 const Nav = () => (
@@ -14,7 +15,7 @@ const Nav = () => (
         <h1 className="logo">Marvel</h1>
       </div>
       <div>
-        <input type="text" className="nav-search-input" placeholder="Search" />
+        <SearchInput className="nav-search-input" />
       </div>
     </div>
   </nav >
