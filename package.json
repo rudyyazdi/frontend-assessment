@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SuperHero API",
   "scripts": {
-    "start": "node api/index.js",
+    "start": "nf start",
     "test": "react-scripts test"
   },
   "author": "Hireup",
@@ -12,6 +12,7 @@
     "axios": "^0.17.0",
     "cors": "^2.8.4",
     "crypto-js": "^3.1.9-1",
+    "foreman": "^3.0.1",
     "json-server": "^0.14.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
