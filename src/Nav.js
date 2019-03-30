@@ -14,7 +14,7 @@ const Nav = () => (
         <h1 className="logo">Marvel</h1>
       </div>
       <div>
-        <input type="text" className="search-input" placeholder="Search" />
+        <input type="text" className="nav-search-input" placeholder="Search" />
       </div>
     </div>
   </nav >

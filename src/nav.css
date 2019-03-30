@@ -16,7 +16,7 @@ div.container div {
   /* border: 1px solid black; */
 }
 
-input.search-input {
+input.nav-search-input {
   display: none;
 }
 
@@ -62,4 +62,18 @@ div.container h1.logo {
 
 .menu span::after {
   top: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  input.nav-search-input {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  div.container {
+    grid-template-columns: 0px 2fr 1fr;
+  }
 }
