@@ -5,7 +5,7 @@ import './nav.css'
 
 const Nav = () => (
   <nav>
-    <div className="container">
+    <div className="nav">
       <div>
         <label className="menu">
           <span></span>

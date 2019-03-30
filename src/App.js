@@ -9,7 +9,9 @@ class App extends Component {
     return (
       <div>
         <Nav />
-        <SearchInput className="main-search-input" />
+        <div className="container">
+          <SearchInput className="main-search-input" />
+        </div>
       </div>
     );
   }

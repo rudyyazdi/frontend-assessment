@@ -5,7 +5,7 @@ nav {
   text-transform: uppercase;
 }
 
-div.container {
+div.nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100%;
@@ -16,7 +16,7 @@ div.container {
   visibility: hidden;
 }
 
-div.container h1.logo {
+div.nav h1.logo {
   color: white;
   font-family: 'Arial';
   font-weight: 900;
@@ -69,7 +69,7 @@ div.container h1.logo {
     visibility: hidden;
   }
 
-  div.container {
-    grid-template-columns: 0px 2fr 1fr;
+  div.nav {
+    grid-template-columns: 0px 2fr 1fr 1fr;
   }
 }

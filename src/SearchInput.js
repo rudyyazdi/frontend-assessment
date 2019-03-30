@@ -6,7 +6,7 @@ import './search-input.css'
 
 const SearchInput = ({ className }) => (
   <div className={classNames([className, 'search-input'])}>
-    <input type="text" placeholder="Search" />
+    <input type="text" placeholder="Search.." />
   </div>
 )
 
