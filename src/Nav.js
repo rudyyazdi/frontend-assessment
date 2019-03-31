@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SearchInput from './SearchInput'
-import './nav.css'
+import SearchInput from './SearchInput';
+import './nav.css';
 
 const Nav = () => (
   <nav>
@@ -19,6 +19,6 @@ const Nav = () => (
       </div>
     </div>
   </nav >
-)
+);
 
-export default Nav
+export default Nav;

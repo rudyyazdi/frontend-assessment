@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './app.css';
 import Nav from './Nav';
-import SearchInput from './SearchInput'
+import SearchInput from './SearchInput';
 
 const App = () => (
   <div>
@@ -11,6 +11,6 @@ const App = () => (
       <SearchInput className="main-search-input" />
     </div>
   </div>
-)
+);
 
 export default App;
