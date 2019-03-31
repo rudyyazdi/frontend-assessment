@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import './search-results.css';
 
 const SearchResults = ({ superheroes, input, images }) => {
-  const superheroDivMaker = ({ id, name }) => {
+  const superheroDivMaker = ({ id, name, images }) => {
     const style = {
-      backgroundImage: `url(https://raw.githubusercontent.com/akabab/superhero-api/0.2.0/api/images/sm/717-wolverine.jpg)`
+      backgroundImage: `url(${images.sm}), url('/not-found.png')`
     }
     return <div key={id} className="superhero-row">
       <div className="superhero-image" style={style} />
