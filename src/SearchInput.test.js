@@ -12,6 +12,7 @@ it('has the right elements', () => {
   expect(queryByTestId('wrapper')).toBeInTheDocument();
   expect(queryByTestId('input')).toBeInTheDocument();
   expect(queryByTestId('loader')).not.toBeInTheDocument();
+  expect(queryByTestId('results')).not.toBeInTheDocument();
 });
 
 it('shows the spinner and the input values when there is a value', () => {
@@ -26,11 +27,13 @@ it('shows the spinner and the input values when there is a value', () => {
   fireEvent.change(input, { target: { value: newInput } });
   expect(input.value).toBe(newInput);
   expect(queryByTestId('loader')).toBeInTheDocument();
+  expect(queryByTestId('results')).toBeInTheDocument();
 
   // remove the input
   fireEvent.change(input, { target: { value: '' } });
   expect(input.value).toBe('');
   expect(queryByTestId('loader')).not.toBeInTheDocument();
+  expect(queryByTestId('results')).not.toBeInTheDocument();
 });
 
 it('removes the spinner when it gets the response', async () => {
@@ -40,4 +43,5 @@ it('removes the spinner when it gets the response', async () => {
   fireEvent.change(input, { target: { value: 'a' } });
   await waitForDomChange();
   expect(queryByTestId('loader')).not.toBeInTheDocument();
+  expect(queryByTestId('results')).toBeInTheDocument();
 });
