@@ -16,19 +16,19 @@ p.not-found {
   padding: 1em;
   border-bottom: 1px #ccc solid;
   cursor: pointer;
-}
 
-.superhero-image {
-  flex-basis: 5em;
-  height: 100%;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-}
+  .superhero-image {
+    flex-basis: 5em;
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
 
-.superhero-info {
-  height: 100%;
-  padding-left: 1em;
-  flex: 1;
-  overflow: hidden;
+  .superhero-info {
+    height: 100%;
+    padding-left: 1em;
+    flex: 1;
+    overflow: hidden;
+  }
 }

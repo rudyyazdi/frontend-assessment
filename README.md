@@ -2,6 +2,7 @@
 
 - `$ yarn` to install the dependencies
 - `$ yarn start` to initiate both the API server and the webpack dev server
+- the mobile transition width can be adjusted by modifying `src/variables.scss`
 
 ## assumptions:
 

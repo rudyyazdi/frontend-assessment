@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SearchInput from './SearchInput';
-import './nav.css';
+import './nav.scss';
 
 const Nav = () => (
   <nav>

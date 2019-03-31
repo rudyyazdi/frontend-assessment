@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './app.css';
+import './app.scss';
 import Nav from './Nav';
 import SearchInput from './SearchInput';
 

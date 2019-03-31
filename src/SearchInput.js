@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Loader from 'react-loader-spinner';
 import axios from 'axios';
 
-import './search-input.css';
+import './search-input.scss';
 import SearchResults from './SearchResults';
 
 const SearchInput = ({ className }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './search-results.css';
+import './search-results.scss';
 
 const SearchResults = ({ superheroes, input }) => {
   const superheroDivMaker = ({ id, name, images, work }) => {

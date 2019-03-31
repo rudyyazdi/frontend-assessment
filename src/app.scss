@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
   width: 80%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: $mobile-width) {
   .main-search-input {
     visibility: hidden;
   }
