@@ -9,3 +9,17 @@ p.not-found {
   color: #444;
   margin-bottom: 2em;
 }
+
+.superhero-row {
+  display: flex;
+  padding: 1em;
+  border-bottom: 1px #ccc solid;
+}
+
+.superhero-image {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}

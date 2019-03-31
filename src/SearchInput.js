@@ -44,7 +44,7 @@ const SearchInput = ({ className }) => {
       </div>
     }
     <div className="search-results outer" data-testid="results">
-      <SearchResults superheroes={superheroes} input={input} />
+      <SearchResults {...{ input, superheroes }} />
     </div>
   </div>);
 };
