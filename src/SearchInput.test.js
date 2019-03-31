@@ -39,7 +39,6 @@ it('shows the spinner and the input values when there is a value', () => {
 it('removes the spinner when it gets the response', async () => {
   const { getByTestId, queryByTestId } = render(<SearchInput />);
   const input = getByTestId('input');
-  const wrapper = getByTestId('wrapper');
   fireEvent.change(input, { target: { value: 'a' } });
   await waitForDomChange();
   expect(queryByTestId('loader')).not.toBeInTheDocument();

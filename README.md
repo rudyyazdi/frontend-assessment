@@ -14,3 +14,4 @@ The following assumptions were made for simplicity, please let me know if you wa
 - there is always a `work` property in the response.
 - there is no need to debounce the api calls if the user is typing too quickly.
 - it is ok for the "image unavailable placeholder" to be shown while the actual image is loading.
+- there is no need to unmount the components that are hidden should the display size change.
