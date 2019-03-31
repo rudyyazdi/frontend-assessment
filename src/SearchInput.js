@@ -7,7 +7,7 @@ import axios from 'axios';
 import './search-input.scss';
 import SearchResults from './SearchResults';
 
-const SearchInput = ({ className }) => {
+const SearchInput = ({ className, isDetailed }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [input, setInput] = useState("");
   const [superheroes, setSuperheroes] = useState([]);
@@ -45,13 +45,14 @@ const SearchInput = ({ className }) => {
     }
     {(input !== "") &&
       <div className="search-results outer" data-testid="results">
-        <SearchResults {...{ input, superheroes }} />
+        <SearchResults {...{ input, superheroes, isDetailed }} />
       </div>
     }
   </div>);
 };
 
 SearchInput.propTypes = {
+  isDetailed: PropTypes.bool,
   className: PropTypes.string
 };
 

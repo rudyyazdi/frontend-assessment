@@ -15,7 +15,7 @@ const Nav = () => (
         <h1 className="logo">Marvel</h1>
       </div>
       <div>
-        <SearchInput className="nav-search-input" />
+        <SearchInput className="nav-search-input" isDetailed />
       </div>
     </div>
   </nav >
