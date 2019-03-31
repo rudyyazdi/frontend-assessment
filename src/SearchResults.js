@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 
 import './search-results.css';
 
-const SearchResults = ({ superheroes, input, images }) => {
+const SearchResults = ({ superheroes, input }) => {
   const superheroDivMaker = ({ id, name, images, work }) => {
     const style = {
       backgroundImage: `url(${images.sm}), url('/not-found.png')`
     }
-    return <div key={id} className="superhero-row">
+    const handleOnClick = () => console.log(name)
+
+    return <div key={id} className="superhero-row" onClick={handleOnClick}>
       <div className="superhero-image" style={style} />
       <div className="superhero-info">
         <h4>{name}</h4>

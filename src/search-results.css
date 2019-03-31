@@ -15,6 +15,7 @@ p.not-found {
   height: 5em;
   padding: 1em;
   border-bottom: 1px #ccc solid;
+  cursor: pointer;
 }
 
 .superhero-image {
