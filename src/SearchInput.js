@@ -5,6 +5,7 @@ import Loader from 'react-loader-spinner';
 import axios from 'axios';
 
 import './search-input.css';
+import SearchResults from './SearchResults';
 
 const SearchInput = ({ className }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -42,6 +43,9 @@ const SearchInput = ({ className }) => {
         />
       </div>
     }
+    <div className="search-results outer" data-testid="results">
+      <SearchResults superheroes={superheroes} input={input} />
+    </div>
   </div>);
 };
 

@@ -1,0 +1,11 @@
+h3.not-found {
+  margin-top: 2em;
+  text-align: center;
+  color: crimson;
+}
+
+p.not-found {
+  text-align: center;
+  color: #444;
+  margin-bottom: 2em;
+}

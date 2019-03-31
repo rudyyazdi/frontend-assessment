@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, cleanup, fireEvent, waitForDomChange } from 'react-testing-library';
 import 'jest-dom/extend-expect';
-import { act } from 'react-dom/test-utils';
 import axiosMock from 'axios';
 
 import SearchInput from './SearchInput';

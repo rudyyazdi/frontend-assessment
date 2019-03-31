@@ -1,8 +1,6 @@
 nav {
   background-color: red;
   height: 4em;
-  color: white;
-  text-transform: uppercase;
 }
 
 div.nav {
@@ -30,6 +28,7 @@ div.nav h1.logo {
   font-size: 3em;
   letter-spacing: -0.1em;
   margin: auto;
+  text-transform: uppercase;
 }
 
 .menu {
