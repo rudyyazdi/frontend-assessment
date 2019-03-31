@@ -12,14 +12,22 @@ p.not-found {
 
 .superhero-row {
   display: flex;
+  height: 5em;
   padding: 1em;
   border-bottom: 1px #ccc solid;
 }
 
 .superhero-image {
-  width: 5em;
-  height: 5em;
+  flex-basis: 5em;
+  height: 100%;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
+}
+
+.superhero-info {
+  height: 100%;
+  padding-left: 1em;
+  flex: 1;
+  overflow: hidden;
 }

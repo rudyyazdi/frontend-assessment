@@ -32,4 +32,5 @@ input[type=text], select {
   position: absolute;
   right: 0;
   margin-top: 2px;
+  overflow: scroll;
 }

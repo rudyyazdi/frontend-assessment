@@ -14,7 +14,7 @@ it('shows the error when superheroes are empty', () => {
 });
 
 it('shows the results when superheroes are not empty', () => {
-  const superhero = { id: 1, name: 'Wolverine', images: { sm: 'image.jpg' } }
+  const superhero = { id: 1, name: 'Wolverine', images: { sm: 'image.jpg' }, work: { occupation: '' } }
   const { queryAllByText } = render(<SearchResults input="" superheroes={[superhero]} />);
   expect(queryAllByText('Wolverine').length).toBe(1);
 });

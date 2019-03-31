@@ -4,14 +4,15 @@ import PropTypes from 'prop-types';
 import './search-results.css';
 
 const SearchResults = ({ superheroes, input, images }) => {
-  const superheroDivMaker = ({ id, name, images }) => {
+  const superheroDivMaker = ({ id, name, images, work }) => {
     const style = {
       backgroundImage: `url(${images.sm}), url('/not-found.png')`
     }
     return <div key={id} className="superhero-row">
       <div className="superhero-image" style={style} />
       <div className="superhero-info">
-        {name}
+        <h4>{name}</h4>
+        <p>{work.occupation}</p>
       </div>
     </div >
   }
